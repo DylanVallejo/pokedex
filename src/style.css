@@ -186,4 +186,45 @@
         border: 2px solid black;
     }
 }
+@media screen and (max-width: 800px) {
+    .searchBar{
+        width: 100px;
+        height: 20px;
+        margin: 2px auto;
+        /* display: flex; */
+    }
+    .paginationBtns{
+        height: 20px;
+        width: 110px;
+        text-align: center;
+        justify-content: center;
+        /* display: flex; */
+        padding: 2px;
+        margin: 5px auto;
+        background-color: rgb(173, 153, 153);
+    }
+    #inputGroup-sizing-default{
+        background-color: beige;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 1px auto;
+        padding: 2px;
+        display: flex;
+        
+        /* display: none; */
+    }
+    .mb-3{
+        display: flex;
+        margin: 2px auto;
+    }
+    .searchBarContainer{
+        overflow-x: hidden;
+    }
+    .searchAndBtnsContainer{
+        display: flex;
+        padding: 2px;
+    }
+}
+
 
