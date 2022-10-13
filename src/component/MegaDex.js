@@ -106,7 +106,7 @@ const MegaDex = (  ) => {
                                         <Col className='secondBlock'>
                                             <Card.Text variant="primary" className='pkmInfo'><span className='subTitles' >N# de id:</span> {item.id}</Card.Text>
                                             <Card.Text variant="primary" className='pkmInfo'><span className='subTitles'>Weight:</span> {item.weight}</Card.Text>
-                                            <Card.Text variant="primary" className='pkmInfo'><span className='subTitles'>Types:</span> 
+                                            {/* <Card.Text variant="primary" className='pkmInfo'><span className='subTitles'>Types:</span> 
                                                 { item.types.map((types,index)=>{
                                                     return(
                                                         <span key={index}><br/>
@@ -114,7 +114,7 @@ const MegaDex = (  ) => {
                                                         </span>
                                                     )
                                                 })} 
-                                            </Card.Text>  
+                                            </Card.Text>   */}
                                         </Col>
                                 </Row>
                             )}

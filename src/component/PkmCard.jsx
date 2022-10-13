@@ -13,10 +13,23 @@ const PkmCard =  ({pokemon}) =>{
                         <h3 >{pokemon.name}</h3>
                         <img  alt='Pokemon' className='cardImg' src={pokemon.sprites.front_default}/> 
                         <div> 
+                            <h2>Abilities</h2>
                             {
                                 pokemon.abilities.map((pkmAbilities,key )=>{
                                     return(
-                                        <span key={key}>{pkmAbilities.ability.name}<br/></span>   
+                                        <span key={key}>{pkmAbilities.ability.name}<br/></span> 
+                                    )
+                                })
+                            }
+                                <h2> Types: </h2>
+                            {
+                                pokemon.types.map((type,key)=>{
+                                    return(
+                    
+                                            <span key={key}>
+                                                {type.type.name}<br/>
+                                            </span>
+                                        
                                     )
                                 })
                             }
