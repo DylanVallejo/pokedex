@@ -1,7 +1,5 @@
 
 const PkmCard =  ({pokemon}) =>{
-    console.log('cardeleemtn')
-    console.log( pokemon) 
     return(
         <>
             {

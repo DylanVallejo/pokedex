@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react';
 import PkmCard from './PkmCard';
-// import '../index.css'
 import '../style.css'
 import axios from 'axios';
 
