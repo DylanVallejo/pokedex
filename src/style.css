@@ -16,12 +16,9 @@
     display: flex;
     background-color: brown;
     position:relative;
-    /* box-sizing: content-box; */
-    /* padding: 10px; */
 }
 .searchAndBtnsContainer{
     width: auto;
-    /* position:absolute; */
     top:0;
     bottom:0;
     display: flex;
@@ -32,17 +29,14 @@
     text-align: center;
     background-color: aqua;
     width: 100%;
-    /* box-sizing: content-box; */
-    /* height: auto; */
 }
 .secondContainer{
     display: flex;
     flex-direction: row;
     box-sizing: content-box;
-    /* position:relative; */
+
 }
 .firstRow, .secondRow{
-    /* height: 100%; */
     display: flex;
     flex-direction: row;
     width: 50%;
@@ -53,16 +47,12 @@
     height: 86vh;
     overflow-y: auto;
     scrollbar-width: none;
-    
-    
     box-sizing: border-box;
-    
     height:90vh;
     margin: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* width: 20%; */
     position:relative;
     
 }
@@ -72,21 +62,13 @@
 .secondRow{
     height:90vh;
     box-sizing: border-box;
-    background-color: rgb(153, 235, 112);
-    /* border: 5px solid  rgb(204, 42, 42); */
     margin: auto;
     width: auto;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
-    /* width: 20%; */
     position:relative;
     padding: 10px;
     
 }
 .Carta{
-    /* height: auto; */
-    background-color: rgb(161, 161, 238);
     height: 100%;
     width: 100%;
     margin: auto;
@@ -94,10 +76,6 @@
     justify-content: center;
     text-align: center;
     display: grid;
-    /* position:absolute;
-    top:0;
-    bottom:0; */
-    /* box-sizing:  border-box; */
 }
 .cartaContainer{
     height: 300px;
@@ -111,15 +89,8 @@
 }
 .cardImg{
     height: 150px;
+    margin: -5px auto;
 }
-/* .soloPkmInfo{
-    background-color: aliceblue;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 5px solid  rgb(204, 42, 42);
-} */
 .pkmCenter{ 
     margin: auto;
     /* padding: 20px ; */
@@ -127,7 +98,7 @@
     background-color: rgb(75, 246, 13);
 }
 .cardPkm{
-    border: 5px solid  black;
+    border: 2px solid  black;
     margin: 5px;
     padding: 5px;
     width: 300px;
@@ -137,34 +108,36 @@
     align-items: center;
     justify-content: center;
     text-align: left;
-    
     background-color: antiquewhite;
 }
 .cardPkm:hover{
     cursor: pointer;
+    zoom: 1.1 ;
+    background-color: aquamarine;
 }
 .pkmTitle{
     background-color: rgb(200, 196, 196);
     border-radius: 10px;
     text-align: center;
 }
-@media screen and (max-width: 800px) {
+.statistics{
+    display: inline-block;
+    flex-flow: row wrap;
+
+}
+
+    @media screen and (max-width: 800px) {
     .secondContainer, .firstRow{
         display: block;
         width: 100%; 
     }
-}
-@media screen and (max-width: 800px) {
     .Carta, .secondRow,.cartaContainer{
         height: auto;
         padding: 5px;
         
     }
-}
-@media screen and (max-width: 800px) {
     .pkmCenter,.firstRow, .cardPkm{
         height: 100%;
-        /* overflow-y: scroll; */
         padding: 5px;
         align-items: center;
         justify-content: center;
@@ -172,23 +145,19 @@
         margin: 5px auto;
         border: 2px solid black;
     }
-}
-@media screen and (max-width: 800px) {
     .cardPkm{
         width: auto;
-        height: 100%;
+        height: auto;
         /* overflow-y: scroll; */
         padding: 5px;
         align-items: center;
         justify-content: center;
         text-align: left;
         margin: 5px auto;
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
-}
-@media screen and (max-width: 800px) {
     .searchBar{
-        width: 100px;
+        width: 150px;
         height: 20px;
         margin: 2px auto;
         /* display: flex; */
@@ -198,24 +167,23 @@
         width: 110px;
         text-align: center;
         justify-content: center;
-        /* display: flex; */
+        display: flex;    
         padding: 2px;
-        margin: 5px auto;
+        margin: 0px auto;
+        margin-top: 20px;
         background-color: rgb(173, 153, 153);
     }
     #inputGroup-sizing-default{
-        background-color: beige;
         justify-content: center;
         text-align: center;
         align-items: center;
         margin: 1px auto;
         padding: 2px;
         display: flex;
-        
-        /* display: none; */
+        word-break: normal;
     }
     .mb-3{
-        display: flex;
+        flex-flow: column wrap;
         margin: 2px auto;
     }
     .searchBarContainer{
