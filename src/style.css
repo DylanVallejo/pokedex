@@ -42,7 +42,6 @@
     width: 50%;
 }
 .firstRow{
-    background-color: rgb(238, 191, 130);
     padding: 10px;
     height: 86vh;
     overflow-y: auto;
@@ -86,6 +85,7 @@
     align-items: center;
     justify-content: center;
     text-align: center; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 .cardImg{
     height: 150px;
@@ -93,9 +93,8 @@
 }
 .pkmCenter{ 
     margin: auto;
-    /* padding: 20px ; */
     height: auto; 
-    background-color: rgb(75, 246, 13);
+
 }
 .cardPkm{
     border: 2px solid  black;
@@ -104,26 +103,40 @@
     width: 300px;
     display: flex;
     box-shadow: 1px 1px 1px  white;
-    /* margin: auto; */
     align-items: center;
     justify-content: center;
     text-align: left;
-    background-color: antiquewhite;
+    background-color: rgb(48 167 215)
 }
 .cardPkm:hover{
     cursor: pointer;
-    zoom: 1.1 ;
-    background-color: aquamarine;
+    zoom: 1.01;
+    background-color: rgb(133, 90, 201);
+    transition: background-color 0.3s ease;
 }
 .pkmTitle{
     background-color: rgb(200, 196, 196);
     border-radius: 10px;
     text-align: center;
+    /* width: max-content; */
+    box-sizing: border-box;
 }
 .statistics{
     display: inline-block;
     flex-flow: row wrap;
+    height: 40px;
+    margin: 5px auto;
+    padding: 2px;
+    text-align: left;
+    display: inline-table
 
+}
+.statistics>span{
+    font-size: 7px;
+    text-align: left;
+}
+.statistics>h2{
+    font-size: 9px;
 }
 
     @media screen and (max-width: 800px) {
@@ -136,7 +149,7 @@
         padding: 5px;
         
     }
-    .pkmCenter,.firstRow, .cardPkm{
+    /* .pkmCenter,.firstRow, .cardPkm{
         height: 100%;
         padding: 5px;
         align-items: center;
@@ -144,23 +157,24 @@
         text-align: left;
         margin: 5px auto;
         border: 2px solid black;
+        overflow-y: hidden;
+    } */
+    .firstRow{
+        height: 54.4vh;
     }
     .cardPkm{
         width: auto;
         height: auto;
-        /* overflow-y: scroll; */
         padding: 5px;
         align-items: center;
         justify-content: center;
         text-align: left;
         margin: 5px auto;
-        /* border: 2px solid black; */
     }
     .searchBar{
         width: 150px;
         height: 20px;
         margin: 2px auto;
-        /* display: flex; */
     }
     .paginationBtns{
         height: 20px;
@@ -192,6 +206,9 @@
     .searchAndBtnsContainer{
         display: flex;
         padding: 2px;
+    }
+    .mainContainer{
+        height: 100vh;
     }
 }
 

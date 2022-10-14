@@ -1,4 +1,3 @@
-// import { InputGroup, Form, Container, Row, Col, Image, Card, Button } from 'react-bootstrap';
 
 const PkmCard =  ({pokemon}) =>{
     console.log('cardeleemtn')
@@ -8,7 +7,6 @@ const PkmCard =  ({pokemon}) =>{
             {
                 (!pokemon) ? "" : (  
                 <div className='Carta'>
-                    {/* <Row className='soloPkmInfo'> */}
                     <div className='cartaContainer'>
                         <h3 >{pokemon.name}</h3>
                         <img  alt='Pokemon' className='cardImg' src={pokemon.sprites.front_default}/> 
@@ -51,7 +49,6 @@ const PkmCard =  ({pokemon}) =>{
                             </div>
                         </div>
                     </div>    
-                    {/* </Row> */}
                 </div>
             )
             }
